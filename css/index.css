@@ -1,0 +1,1029 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: #fff; 
+    position: relative; 
+    background-color: #000;  
+}
+header {
+    position: fixed;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    top: 0;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.75);
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-weight: 300;
+    font-size: 1.625rem;
+    letter-spacing: 0.3125rem;
+    margin: 1.25rem 0rem;
+}
+
+img {
+    width: 100%;
+}
+
+.navBar {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .flex {
+    justify-content: space-between;
+}
+.logo a{
+    transition: all 0.3s ease;
+}
+.logo a:hover {
+    color: #4CD265;
+}
+
+.navLinkHome {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    cursor: pointer;
+}
+.navLinkHome:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.navLinkHome::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    background-color: #4CD265;
+    transition: width 200ms ease-in;
+}
+.navLinkHome:hover::after{
+    width:60%;
+}
+.navLinkAbout {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    cursor: pointer;
+}
+.navLinkAbout:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.navLinkAbout::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    left: 9px;
+    bottom: 0px;
+    background-color: #4CD265;
+    transition: width 200ms ease-in;
+}
+.navLinkAbout:hover::after{
+    width:62%;
+}
+.navLinkResume {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    cursor: pointer;
+}
+.navLinkResume:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.navLinkResume::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    left: 11px;
+    bottom: 0px;
+    background-color: #4CD265;
+    transition: width 200ms ease-in;
+}
+.navLinkResume:hover::after{
+    width:66%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+/* Hero Section*/
+.hero {
+    background-color: #000;
+    position: relative;
+    top: 100px;
+    padding-bottom: 4.6875rem;
+}
+.hero .grid {
+    grid-template-columns: 1.75fr 1fr;
+}
+.underLine {
+    background-color: #4CD265;
+    width: 44%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.heroText {
+    margin-top: 100px;
+}
+.heroTitle {
+    font-weight: 900;
+    font-size: 3rem;
+   
+}
+.heroCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+}
+.heroImage {
+    max-width: 100%;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+/* Case Studies Section*/
+.caseStudies {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 50px;
+}
+.caseStudiesText {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.caseStudiesTitle {
+    font-family: 'Roboto', "sans-serif";
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.caseStudiesUnderline {
+    background-color: #4CD265;
+    width: 80%;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.caseStudiesCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* First Grid Item */
+.first {
+    width: 100%;
+    background-color: #00A5B9;
+    border-radius: 7px;
+    grid-area: one;
+}
+/*.first:hover {
+    transform: scale(.98);
+}*/
+.firstColor {
+    background-color: #5BA6CD ;
+}
+.firstText {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.firstTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+}
+.firstUnderline {
+    background-color: #4CD265;
+    width: 175px;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.firstCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.firstImage {
+    background-image: url(../Images/Cannoli_Website.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.firstWorksImage {
+    background-image: url(../Images/LensBoard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.firstGrid {
+    display: grid;
+    grid-template-columns: 27% 73%;
+    gap: 0px;
+    width: 100%;
+   
+}
+
+/* Second Grid Item */
+.second {
+    width: 100%;
+    background-color: #9816D4;
+    border-radius: 7px;
+    grid-area: two;
+}
+/*.second:hover {
+    transform: scale(.98);
+}*/
+.secondColor{
+    background-color: #CB28BB;
+}
+.secondText {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.secondTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+}
+.secondUnderline {
+    background-color: #4CD265;
+    width: 175px;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.secondCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.soon{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+.secondImage {
+    background-image: url(../Images/FitFriend-iPhone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100%;
+}
+.secondWorksImage {
+    background-image: url(../Images/VW_Social_iPhone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 100%;
+}
+.secondGrid {
+    display: grid;
+    grid-template-rows: 25% 75%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Third Grid Item */
+.third {
+    width: 100%;
+    background-color: #2563C8;
+    border-radius: 7px;
+    grid-area: three;
+}
+/*.third:hover {
+    transform: scale(.98);
+}*/
+.thirdColor {
+    background-color: #828384 ;
+}
+.thirdText {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.thirdTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+}
+.thirdUnderline {
+    background-color: #4CD265;
+    width: 175px;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.thirdCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.thirdImage {
+    background-image: url(../Images/USDA_Website.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.thirdWorksImage {
+    background-image: url(../Images/Knight_website.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.thirdGrid {
+    display: grid;
+    grid-template-columns: 27% 73%;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.caseStudies .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas:
+    'one one two'
+    'three three two';
+    height: 776px;
+}
+
+/* Contact Form Section */
+.contact {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 75px;
+}
+.contactText {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.contactTitle {
+    font-family: 'Roboto', "sans-serif";
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.contactUnderline {
+    background-color: #4CD265;
+    width: 52.5%;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Contact Form */
+.contactForm {
+    width: 580px;
+    height: 343px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.topInputs {
+    width: 580px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.leftInput, .rightInput {
+    width: 280px;
+    height: 36px;
+    display: flex;
+}
+.nameInput {
+    width: 280px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px darkgray solid;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: darkgray;
+}
+.emailInput {
+    width: 280px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px darkgray solid;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: darkgray;
+}
+.bottomInput {
+    width: 580px;
+    height: 190px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+.messageInput {
+    width: 580px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    border: 1px darkgray solid;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: 'roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: darkgray;
+}
+.formflex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.btnForm {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #4CD265;
+    transition: all 0.3s ease;
+}
+.btnForm:hover {
+    transform: scale(0.95);
+}
+
+/* Footer */
+.navLinkedin {
+   
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    bottom: 0px;
+}
+.navLinkedin:hover {
+    opacity: 1;
+    visibility: visible;
+}
+.navLinkedin::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-radius: 7px;
+    position: absolute;
+    left: 20px;
+    bottom: -13px;
+    background-color: #4CD265;
+    transition: width 200ms ease-in;
+}
+.navLinkedin:hover::after{
+    width:60%;
+}
+
+.copyRight {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* About Page */
+.intro {
+    background-color: #000;
+    position: relative;
+    top: 100px;
+    padding-bottom: 50px;
+}
+.intro .grid {
+    grid-template-columns: 1.75fr 1fr;
+}
+.introUnderLine {
+    background-color: #4CD265;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.introText {
+    margin-top: 100px;
+}
+.introGreeting{
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.introTitle {
+    font-weight: 900;
+    font-size: 3rem;
+   
+}
+.introCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+/* Skills Section */
+.skillsAppsInts {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 150px;
+    top: 100px;
+}
+.listBox {
+    max-width: 100%;
+    background-color: #000;
+    border: 3px solid #4CD265;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* First Grid Item */
+.listBoxIcon {
+    max-width: 53%;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/pencil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 58px;
+    margin-left: 51px;
+    margin-bottom: 200px;
+}
+
+.listBoxGrid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;  
+}
+
+/* Second Grid Item */
+.listBoxText {
+    max-width: 100%;
+    margin-top: 58px;
+    
+}
+.listBoxTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.skillsUnderline {
+    background-color: #4CD265;
+    width: 19%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.listBoxLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 58px;
+    gap: 20px;
+}
+.listBox ul {
+    width: 100%;
+    
+}
+.listBoxLists li {
+    margin-bottom: 14px;
+    width: 100%;
+}
+.appsUnderline {
+    background-color: #9816D4;
+    width: 40%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.appsIcon {
+    max-width: 53%;
+    /* <a href="https://www.flaticon.com/free-icons/monitor" title="monitor icons">Monitor icons created by prettycons - Flaticon</a> */
+    background-image: url(../Images/website.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 52px;
+    margin-left: 51px;
+    margin-bottom: 135px;
+}
+.appsListBox {
+    border: 3px solid #9816D4;
+    margin-top: 75px;
+}
+.intsUnderline {
+    background-color: #2e67f8;
+    width: 29%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.intsIcon {
+    max-width: 53%;
+    /* <a href="https://www.flaticon.com/free-icons/watercolor" title="Watercolor icons">Watercolor icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/watercolor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 55px;
+    margin-left: 51px;
+    margin-bottom: 96px;
+}
+.intsListBox {
+    border: 3px solid #2e67f8;
+    margin-top: 75px;
+}
+
+.skillsAppsInts .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   
+}
+
+
+.container {
+    max-width: 73.75rem;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 2.5rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: scale(0.95);
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media(max-width: 768px) {
+    .hero {
+        background-color: #000;
+        position: relative;
+        top: 100px;
+        padding-bottom: 3rem;
+    }
+    .hero .grid {
+        display: grid;
+        justify-content: center;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .underLine {
+        background-color: #4CD265;
+        width: 75%;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .heroTitle {
+        font-weight: 900;
+        font-size: 2.5rem;
+        text-align: center;
+       
+    }
+    .heroCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: 0 20px;
+    }
+    .heroImage {
+        max-width: 75%;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .caseStudies{
+        height: auto;
+    }
+    .caseStudies .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 50px;
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        height: 100%;
+    }
+    .firstText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .secondGrid {
+        display: grid;
+        grid-template-columns: 27% 73%;
+        width: 100%;
+        gap: 0;
+        height: auto;
+    }
+    .secondImage {
+        background-image: url(../Images/FitFriend-iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        max-width: 100%;
+        height: 320px;
+    }
+    .secondWorksImage {
+        background-image: url(../Images/VW_Social_iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        max-width: 100%;
+        height: 300px;
+    }
+    .contactUnderline {
+        background-color: #4CD265;
+        width: 75%;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* About Page */
+.intro {
+    background-color: #000;
+    position: relative;
+    top: 100px;
+    padding-bottom: 50px;
+}
+.intro .grid {
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.introUnderLine {
+    background-color: #4CD265;
+    width: 80%;
+    height: 7px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.introText {
+    margin-top: 100px;
+}
+.introGreeting{
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.introTitle {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+   
+}
+.introCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+}
+
+
+/* Mobile */
+@media(max-width: 520px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }        
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000;
+        border-bottom: 2px solid #d9d9d9;
+        width: 100%;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);       
+    }
+
+    .navMenu li {
+        margin: 16px 0;
+    }
+    .navMenu.active {
+        left: 0px;
+    }
+    .grid,
+    .caseStudies .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
