@@ -898,6 +898,15 @@ img {
         margin-top: 20px;
         margin-bottom: 40px;
     }
+    .firstWorksImage {
+        background-image: url(../Images/LensBoard.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        overflow: hidden;
+        margin: 10px 0;
+        margin-left: 90px;
+    }
     .secondGrid {
         display: grid;
         grid-template-columns: 27% 73%;
