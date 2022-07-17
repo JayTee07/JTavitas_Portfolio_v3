@@ -15,10 +15,10 @@ header {
     z-index: 1;
     height: 100px;
     width: 100%;
-    background-color: #000;
     top: 0;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.75);
 }
+
 ul {
     list-style: none;
 }
@@ -40,9 +40,12 @@ img {
 }
 
 .navBar {
-    background-color: #000;
+    background-color: transparent;
     height: 100px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
 }
 
 .navMenu {
@@ -656,7 +659,7 @@ img {
 }
 
 /* Skills Section */
-.skillsAppsInts {
+.skillSection {
     background-color: #000;
     position: relative;
     padding-bottom: 150px;
@@ -716,13 +719,13 @@ img {
 }
 .listBoxLists {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 12% 17% 19% 21% 15%;
     font-family: 'Roboto', 'sans-serif';
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 58px;
-    gap: 20px;
+    gap: 30px;
 }
 .listBox ul {
     width: 100%;
@@ -781,12 +784,13 @@ img {
     margin-top: 75px;
 }
 
-.skillsAppsInts .grid {
+.skillSection .grid {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-   
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
@@ -827,7 +831,180 @@ img {
     transform: scale(0.95);
 }
 
+
+/* Skills Section Test */
+.skillTest {
+    max-width: 100%;
+    margin-top: 100px;
+}
+.skillTest .flex {
+    max-width: 100%;
+    display: flex;
+}
+.skillBoxFlex {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #4CD265;
+    border-radius: 7px;
+    padding: 20px;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+.skillText_Flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skillList_Flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+.skillIcon {
+    width: 110px;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/pencil.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+}
+.skillTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 56px;
+    font-weight: 700;
+}
+.skillLine {
+    background-color: #4CD265;
+    width: 20%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.appFlex {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #9816D4;
+    border-radius: 7px;
+    padding: 20px;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+.appIcon {
+    width: 110px;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/website.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+}
+.appLine {
+    background-color: #9816D4;
+    width: 40%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.intFlex {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #2e67f8;
+    border-radius: 7px;
+    padding: 20px;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+.intIcon {
+    width: 110px;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/watercolor.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+}
+.intLine {
+    background-color: #2e67f8;
+    width: 31%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#intPlusMinus {
+    float: right;
+    display: none;
+}
+#appPlusMinus {
+    float: right;
+    display: none;
+}
+#plusMinus {
+    float: right;
+    display: none;
+}
+
+.skillList {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.listTablet {
+    display:none;
+}
+.skill-ul {
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    column-count: 5;
+    column-gap: 20px;
+    column-width: auto;
+}
+
+
 /* Media Queries */
+
+@media(max-width: 1050px){
+    .skill-ul {
+        list-style: none;
+        margin:0px;
+        padding: 0px;
+        column-count: 3;
+        column-gap: 0px;
+        column-width: 175px;
+    }
+    
+
+}
+
+@media(max-width: 850px){
+    .skill-ul {
+        list-style: none;
+        margin:0px;
+        padding: 0px;
+        column-count: 3;
+        column-gap: 10px;
+        column-width: auto;
+    }
+    
+
+}
 
 /* Tablets */
 @media(max-width: 768px) {
@@ -991,6 +1168,131 @@ img {
     text-align: center;
 }
 
+.listBoxIcon {
+    max-width: 53%;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/pencil.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin-top: 58px;
+    margin-left: 51px;
+    margin-bottom: 200px;
+}
+
+.listBoxGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;  
+}
+
+/* Second Grid Item */
+.listBoxText {
+    max-width: 100%;
+    margin-top: 58px;
+    
+}
+.listBoxTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 48px;
+    font-weight: 700;
+
+}
+.skillsUnderline {
+    background-color: #4CD265;
+    width: 19%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.listBoxLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 58px;
+    gap: 0px;
+}
+
+/* Skills Section Test */
+
+.skillBoxFlex {
+    width: 688px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 3px solid #4CD265;
+    border-radius: 7px;
+    padding: 20px;
+    gap: 20px;
+}
+.skillText_Flex {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid blue;*/
+}
+.skillList_Flex {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.skillIcon {
+    width: 13%;
+    /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+    background-image: url(../Images/pencil.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+.skillTitle {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 56px;
+    font-weight: 700;
+}
+.skillLine {
+    background-color: #4CD265;
+    width: 35%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.skillPlus {
+    /*border: 1px solid red;*/
+    display: flex;
+    margin-top: 30px;
+    margin-left: auto;
+    max-width: 100%;
+    height: 100%;
+}
+.skillList {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+    border: 1px solid red;
+    
+}
+.skill-ul {
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+    column-count: 3;
+    column-gap: 10px;
 }
 
 
@@ -1008,6 +1310,10 @@ img {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    header.active{
+        box-shadow: none;
+        transition: all 0.5s ease;
+    }
 
     .navMenu{
         position: fixed;
@@ -1015,24 +1321,26 @@ img {
         top: 100px;
         gap: 0;
         flex-direction: column;
-        background-color: #000;
         border-bottom: 2px solid #d9d9d9;
         width: 100%;
         text-align: center;
-        transition: 0.7s ease-in-out;
-        box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);       
+        transition: s ease-in-out;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .9);
+            -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
     }
 
     .navMenu li {
         margin: 16px 0;
     }
     .navMenu.active {
-        left: 0px;
+        left: 0px;        
     }
+
     .grid,
     .caseStudies .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-
 }
