@@ -311,8 +311,7 @@ img {
     display: grid;
     grid-template-columns: 27% 73%;
     gap: 0px;
-    width: 100%;
-   
+    width: 100%;   
 }
 
 /* Second Grid Item */
@@ -1085,7 +1084,7 @@ img {
 
 
 /* Media Queries */
-
+/* Small Desktop and Laptops */
 @media(min-width: 769px) and (max-width: 1024px) {
     .hero {
         background-color: #000;
@@ -1137,6 +1136,16 @@ img {
     }
     .caseStudies .grid {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-areas:
+        'one one two'
+        'three three two';
+    }
+   /* .caseStudies .grid {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         column-gap: 30px;
@@ -1146,7 +1155,7 @@ img {
         'two'
         'three';
         height: 100%;
-    }
+    }*/
     .firstText {
         max-width: 100%;
         margin-left: 20px;
@@ -1164,7 +1173,8 @@ img {
     }
     .secondGrid {
         display: grid;
-        grid-template-columns: 27% 73%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 27% 73%;
         width: 100%;
         gap: 0;
         height: auto;
@@ -1173,19 +1183,19 @@ img {
         background-image: url(../Images/FitFriend-iPhone.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-position-x: -175px;
         background-size: cover;
         overflow: hidden;
         max-width: 100%;
-        height: 320px;
     }
     .secondWorksImage {
         background-image: url(../Images/VW_Social_iPhone.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-position-x: -175px;
         background-size: cover;
         overflow: hidden;
         max-width: 100%;
-        height: 300px;
     }
     .contactUnderline {
         background-color: #4CD265;
