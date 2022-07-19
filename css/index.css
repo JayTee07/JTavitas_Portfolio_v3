@@ -462,6 +462,7 @@ img {
 .contact {
     background-color: #000;
     position: relative;
+    top: 75px;
     padding-bottom: 75px;
 }
 .contactText {
@@ -583,8 +584,25 @@ img {
 }
 
 /* Footer */
-.navLinkedin {
-   
+.footerBar {
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+
+.footerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBar .flex {
+    justify-content: space-between;
+}
+.footerLinkedin {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -594,11 +612,11 @@ img {
     padding-left: 20px;
     bottom: 0px;
 }
-.navLinkedin:hover {
+.footerLinkedin:hover {
     opacity: 1;
     visibility: visible;
 }
-.navLinkedin::after{
+.footerLinkedin::after{
     content: "";
     width: 0%;
     height: 4px;
@@ -609,7 +627,7 @@ img {
     background-color: #4CD265;
     transition: width 200ms ease-in;
 }
-.navLinkedin:hover::after{
+.footerLinkedin:hover::after{
     width:60%;
 }
 
@@ -624,7 +642,7 @@ img {
     background-color: #000;
     position: relative;
     top: 100px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
 }
 
 .introUnderLine {
@@ -644,7 +662,7 @@ img {
     gap: 26px;
 }
 .introContent {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 .introGreeting{
     font-size: 2.25rem;
@@ -671,8 +689,9 @@ img {
 .skillSection {
     background-color: #000;
     position: relative;
-    padding-bottom: 150px;
-    top: 50px;
+    max-width: 100%;
+    top: 125px;
+    bottom: 75px;
 }
 .listBox {
     max-width: 100%;
@@ -842,10 +861,7 @@ img {
 
 
 /* Skills Section */
-.skillSection {
-    max-width: 100%;
-    margin-top: 150px;
-}
+
 .skillSection .flex {
     max-width: 100%;
     display: flex;
@@ -1070,132 +1086,7 @@ img {
 
 /* Media Queries */
 
-/* Tablets */
-@media(max-width: 955px) {
-    .skillSection {
-        max-width: 100%;
-    }
-    .skillBoxFlex {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 3px solid #4CD265;
-        border-radius: 7px;
-        padding: 30px;
-        gap: 20px;
-        margin-bottom: 75px;
-    }
-    .skillText {
-        cursor: pointer;
-    }
-    .skillLine {
-        width: 25%;
-    }
-    .skillList_grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        'one three'
-        'two four';
-        display: none;
-    }
-    .active {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        'one three'
-        'two four';
-    }
-
-    .appFlex {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 3px solid #9816D4;
-        border-radius: 7px;
-        padding: 30px;
-        gap: 20px;
-        margin-bottom: 75px;
-    }
-    .appText {
-        cursor: pointer;
-    }
-    .appLine {
-        width: 55%;
-    }
-    .appList_grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        'a-one a-three'
-        'a-two a-four';
-        display: none;
-        
-    }
-    .app-active {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        'a-one a-three'
-        'a-two a-four';
-    }
-
-    .intFlex {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: 3px solid #2e67f8;
-        border-radius: 7px;
-        padding: 30px;
-        gap: 20px;
-        margin-bottom: 75px;
-    }
-    .intText {
-        cursor: pointer;
-    }
-    .intLine {
-        width: 43%;
-    }
-    .intList_grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        'i-one i-four'
-        'i-two i-five'
-        'i-three i-five';
-        display: none;
-    }
-    .int-active {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        'i-one i-four'
-        'i-two i-five'
-        'i-three i-five';
-    }
-
-    #plusMinus {
-        display: block;
-        opacity: 1;
-        transition: .03sec;      
-    }
-    
-
+@media(min-width: 769px) and (max-width: 1024px) {
     .hero {
         background-color: #000;
         position: relative;
@@ -1228,14 +1119,14 @@ img {
     }
     .heroCopy {
         font-family: 'Roboto', 'sans-serif';
-        font-size: 1.5rem;
+        font-size: 1.375rem;
         font-weight: 400;
-        line-height: 2.5rem;
+        line-height: 36px;
         text-align: center;
         margin: 0 20px;
     }
     .heroImage {
-        max-width: 75%;
+        max-width: 50%;
         margin-top: 1rem;
         margin-bottom: 2.5rem;
         margin-left: auto;
@@ -1306,14 +1197,17 @@ img {
         margin-right: auto;
         text-align: center;
     }
+    .caseStudiesCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.375rem;
+        font-weight: 400;
+    }
     
     /* About Page */
 .intro {
     background-color: #000;
     position:relative;
-    top: 100px;
     width: 100%;
-    height: 1400px;
 }
 
 .introUnderLine {
@@ -1327,7 +1221,7 @@ img {
     margin-right: auto;
 }
 .introText {
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -1353,16 +1247,137 @@ img {
     text-align: center;
 }
 .about-heroImage {
-    max-width: 65%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
+.skillSection {
+    max-width: 100%;
+}
+.skillBoxFlex {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #4CD265;
+    border-radius: 7px;
+    padding: 30px;
+    gap: 20px;
+    margin-bottom: 75px;
+}
+.skillText {
+    cursor: pointer;
+}
+.skillLine {
+    width: 25%;
+}
+.skillList_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'one three'
+    'two four';
+    display: none;
+}
+.skill-active {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'one three'
+    'two four';
+}
+
+.appFlex {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #9816D4;
+    border-radius: 7px;
+    padding: 30px;
+    gap: 20px;
+    margin-bottom: 75px;
+}
+.appText {
+    cursor: pointer;
+}
+.appLine {
+    width: 55%;
+}
+.appList_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'a-one a-three'
+    'a-two a-four';
+    display: none;
+    
+}
+.app-active {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'a-one a-three'
+    'a-two a-four';
+}
+
+.intFlex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 3px solid #2e67f8;
+    border-radius: 7px;
+    padding: 30px;
+    gap: 20px;
+    margin-bottom: 75px;
+}
+.intText {
+    cursor: pointer;
+}
+.intLine {
+    width: 43%;
+}
+.intList_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'i-one i-four'
+    'i-two i-five'
+    'i-three i-five';
+    display: none;
+}
+.int-active {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'i-one i-four'
+    'i-two i-five'
+    'i-three i-five';
+}
+
+#plusMinus {
+    display: block;
+    opacity: 1;
+    transition: .03sec;      
+}
 
 }
 
 
-/* Mobile */
-@media(max-width: 520px) {
+@media(min-width: 481px) and (max-width: 768px) {
     .hamburger{
         display: block;
     }
@@ -1389,11 +1404,9 @@ img {
         border-bottom: 2px solid #d9d9d9;
         width: 100%;
         text-align: center;
-        transition: s ease-in-out;
+        transition: 0.7s ease-in-out;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
         background-color: rgba(0, 0, 0, .9);
-            -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
     }
 
     .navMenu li {
@@ -1409,6 +1422,484 @@ img {
         grid-template-rows: 1fr;
     }
 
+/* About Page */
+    .intro {
+        background-color: #000;
+        position:relative;
+        width: 100%;
+    }
+    
+    .introUnderLine {
+        background-color: #4CD265;
+        width: 90%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .introText {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    h5{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .introTitle {
+        font-weight: 900;
+        font-size: 2rem;
+        text-align: center;
+       
+    }
+    .introCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .about-heroImage {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skillSection {
+        max-width: 100%;
+    }
+    .skillBoxFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #4CD265;
+        border-radius: 7px;
+        padding: 30px;
+        gap: 20px;
+        margin-bottom: 75px;
+    }
+    .skillTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    .skillText {
+        cursor: pointer;
+    }
+    .skillLine {
+        width: 25%;
+    }
+    .skillList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'one three'
+        'two four';
+        display: none;
+    }
+    .skill-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'one three'
+        'two four';
+    }
+
+    .appFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #9816D4;
+        border-radius: 7px;
+        padding: 30px;
+        gap: 20px;
+        margin-bottom: 75px;
+    }
+    .appTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    .appText {
+        cursor: pointer;
+    }
+    .appLine {
+        width: 55%;
+    }
+    .appList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'a-one a-three'
+        'a-two a-four';
+        display: none;
+        
+    }
+    .app-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'a-one a-three'
+        'a-two a-four';
+    }
+
+    .intFlex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #2e67f8;
+        border-radius: 7px;
+        padding: 30px;
+        gap: 20px;
+        margin-bottom: 75px;
+    }
+    .intTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    .intText {
+        cursor: pointer;
+    }
+    .intLine {
+        width: 43%;
+    }
+    .intList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one i-four'
+        'i-two i-five'
+        'i-three i-five';
+        display: none;
+    }
+    .int-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one i-four'
+        'i-two i-five'
+        'i-three i-five';
+    }
+    #plusMinus {
+        display: block;
+        opacity: 1;
+        transition: .03sec;      
+    }
+    
+    /* Form */
+    .contact {
+        background-color: #000;
+        position: relative;
+        padding-bottom: 75px;
+    }
+    .contactText {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .contactTitle {
+        font-family: 'Roboto', "sans-serif";
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .contactUnderline {
+        background-color: #4CD265;
+        width: 85%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* Contact Form */
+    .contactForm {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+    .topInputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .leftInput, .rightInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nameInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .emailInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .bottomInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .messageInput {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        padding: 10px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .formflex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .btnForm {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 5px;
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #4CD265;
+        transition: all 0.3s ease;
+    }
+    .btnForm:hover {
+        transform: scale(0.95);
+    }
+    
+    /* Footer */
+    .footerLinkedin {
+       
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        bottom: 0px;
+    }
+    .footerLinkedin:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .footerLinkedin::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        border-radius: 7px;
+        position: absolute;
+        left: 20px;
+        bottom: -13px;
+        background-color: #4CD265;
+        transition: width 200ms ease-in;
+    }
+    .footerLinkedin:hover::after{
+        width:60%;
+    }
+    
+    .copyRight {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media(min-width: 376px) and (max-width: 480px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }        
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header.active{
+        box-shadow: none;
+        transition: all 0.5s ease;
+    }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        border-bottom: 2px solid #d9d9d9;
+        width: 100%;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .navMenu li {
+        margin: 16px 0;
+    }
+    .navMenu.active {
+        left: 0px;        
+    }
+
+    .grid,
+    .caseStudies .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+/* About Page */
+    .intro {
+        background-color: #000;
+        position:relative;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .introUnderLine {
+        background-color: #4CD265;
+        width: 90%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .introText {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    h5{
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .introTitle {
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-align: center;
+       
+    }
+    .introCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .about-heroImage {
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skillSection {
+        max-width: 100%;
+        height: 100%;
+        top: 110px;
+        margin-bottom: 25px;
+    }
+    .skillBoxFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #4CD265;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .skillIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/pencil.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .skillTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .skillText {
+        cursor: pointer;
+    }
+    .skillLine {
+        width: 40%;
+    }
     .skillList_grid {
         width: 100%;
         display: grid;
@@ -1419,5 +1910,766 @@ img {
         'two'
         'three'
         'four';
+        display: none;
+    }
+    .skill-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';
+    }
+
+    .appFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #9816D4;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .appIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/website.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .appTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .appText {
+        cursor: pointer;
+    }
+    .appLine {
+        width: 70%;
+    }
+    .appList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'a-one'
+        'a-two'
+        'a-three'
+        'a-four';
+        display: none;
+        
+    }
+    .app-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'a-one'
+        'a-two'
+        'a-three'
+        'a-four';
+    }
+
+    .intFlex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #2e67f8;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    .intIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/watercolor.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+    }
+    .intTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .intText {
+        cursor: pointer;
+    }
+    .intLine {
+        width: 60%;
+    }
+    .intList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one'
+        'i-two'
+        'i-three'
+        'i-four'
+        'i-five';
+        display: none;
+    }
+    .int-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one'
+        'i-two'
+        'i-three'
+        'i-four'
+        'i-five';
+    }
+    #plusMinus {
+        display: block;
+        opacity: 1;
+        transition: .03sec;      
+    }
+    
+    /* Form */
+    .contact {
+        background-color: #000;
+        position: relative;
+        margin-bottom: 75px;
+        top: 120px;
+    }
+    .contactText {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .contactTitle {
+        font-family: 'Roboto', "sans-serif";
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .contactUnderline {
+        background-color: #4CD265;
+        width: 100%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* Contact Form */
+    .contactForm {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+    .topInputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .leftInput, .rightInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nameInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .emailInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .bottomInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .messageInput {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        padding: 10px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .formflex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .btnForm {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 5px;
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #4CD265;
+        transition: all 0.3s ease;
+    }
+    .btnForm:hover {
+        transform: scale(0.95);
+    }
+    
+    /* Footer */
+    .footerBar .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    .footerLinkedin {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+    .footerLinkedin:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .footerLinkedin::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        border-radius: 7px;
+        position: absolute;
+        left: 0px;
+        bottom: -13px;
+        background-color: #4CD265;
+        transition: width 200ms ease-in;
+    }
+    .footerLinkedin:hover::after{
+        width:60%;
+    }
+    
+    .copyRight {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 375px) {
+    .container {
+        max-width: 73.75rem;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 1.5rem;
+    }
+    
+    .logo {
+        font-weight: 300;
+        font-size: 1.75rem;
+        letter-spacing: 0.3125rem;
+        margin: 1.25rem 0rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }        
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header.active{
+        box-shadow: none;
+        transition: all 0.5s ease;
+    }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        border-bottom: 2px solid #d9d9d9;
+        width: 100%;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .navMenu li {
+        margin: 16px 0;
+    }
+    .navMenu.active {
+        left: 0px;        
+    }
+
+    .grid,
+    .caseStudies .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+/* About Page */
+    .intro {
+        background-color: #000;
+        position:relative;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .introUnderLine {
+        background-color: #4CD265;
+        width: 90%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .introText {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .introContent {
+        margin-top: 75px;
+    }
+    h5{
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .introTitle {
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-align: center;
+       
+    }
+    .introCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .about-heroImage {
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skillSection {
+        max-width: 100%;
+        height: 100%;
+        top: 75px;
+        margin-bottom: 0px;
+    }
+    .skillBoxFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #4CD265;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .skillIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/pencil.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+        display: none;
+    }
+    .skillTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .skillText {
+        cursor: pointer;
+    }
+    .skillLine {
+        width: 30%;
+    }
+    .skillList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';
+        display: none;
+    }
+    .skill-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'one'
+        'two'
+        'three'
+        'four';
+    }
+
+    .appFlex {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #9816D4;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .appIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/website.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+        display: none;
+    }
+    .appTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .appText {
+        cursor: pointer;
+    }
+    .appLine {
+        width: 63%;
+    }
+    .appList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'a-one'
+        'a-two'
+        'a-three'
+        'a-four';
+        display: none;
+        
+    }
+    .app-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'a-one'
+        'a-two'
+        'a-three'
+        'a-four';
+    }
+
+    .intFlex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 3px solid #2e67f8;
+        border-radius: 7px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .intIcon {
+        width: 75px;
+        /* <a href="https://www.flaticon.com/free-icons/skill" title="skill icons">Skill icons created by Freepik - Flaticon</a> */
+        background-image: url(../Images/watercolor.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        overflow: hidden;
+        display: none;
+    }
+    .intTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .intText {
+        cursor: pointer;
+    }
+    .intLine {
+        width: 47%;
+    }
+    .intList_grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one'
+        'i-two'
+        'i-three'
+        'i-four'
+        'i-five';
+        display: none;
+    }
+    .int-active {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i-one'
+        'i-two'
+        'i-three'
+        'i-four'
+        'i-five';
+    }
+    #plusMinus {
+        display: block;
+        opacity: 1;
+        transition: .03sec;      
+    }
+    
+    /* Form */
+    .contact {
+        background-color: #000;
+        position: relative;
+        margin-bottom: 75px;
+        top: 110px;
+    }
+    .contactText {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .contactTitle {
+        font-family: 'Roboto', "sans-serif";
+        font-size: 1.25rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .contactUnderline {
+        background-color: #4CD265;
+        width: 100%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    /* Contact Form */
+    .contactForm {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+    .topInputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .leftInput, .rightInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nameInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .emailInput {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .bottomInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    .messageInput {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 1px darkgray solid;
+        border-radius: 7px;
+        padding: 10px;
+        font-family: 'roboto';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        color: darkgray;
+    }
+    .formflex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .btnForm {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 5px;
+        font-family: 'roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        border: 1px solid #4CD265;
+        transition: all 0.3s ease;
+    }
+    .btnForm:hover {
+        transform: scale(0.95);
+    }
+    
+    /* Footer */
+    .footerBar .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+    .footerLinkedin {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+    .footerLinkedin:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+    .footerLinkedin::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        border-radius: 7px;
+        position: absolute;
+        left: 0px;
+        bottom: -13px;
+        background-color: #4CD265;
+        transition: width 200ms ease-in;
+    }
+    .footerLinkedin:hover::after{
+        width:60%;
+    }
+    
+    .copyRight {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 25px;
     }
 }
