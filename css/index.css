@@ -82,7 +82,7 @@ img {
     display: inline-block;
     vertical-align: top;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -101,7 +101,7 @@ img {
     height: 4px;
     border-radius: 7px;
     position: absolute;
-    left: 10px;
+    left: 15px;
     bottom: 0px;
     background-color: #4CD265;
     transition: width 200ms ease-in;
@@ -110,7 +110,9 @@ img {
     width:60%;
 }
 .navLink[aria-current="page"] {
-    color: #4CD265;
+    border-bottom: 2px solid #4CD265;
+    border-radius: 0px;
+    padding-bottom: 0px
 }
 
 .navLinkAbout {
@@ -120,7 +122,7 @@ img {
     display: inline-block;
     vertical-align: top;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -139,7 +141,7 @@ img {
     height: 4px;
     border-radius: 7px;
     position: absolute;
-    left: 9px;
+    left: 14px;
     bottom: 0px;
     background-color: #4CD265;
     transition: width 200ms ease-in;
@@ -154,7 +156,7 @@ img {
     display: inline-block;
     vertical-align: top;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -173,7 +175,7 @@ img {
     height: 4px;
     border-radius: 7px;
     position: absolute;
-    left: 11px;
+    left: 16px;
     bottom: 0px;
     background-color: #4CD265;
     transition: width 200ms ease-in;
