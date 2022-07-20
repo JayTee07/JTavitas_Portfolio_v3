@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
 }
-
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'Roboto', 'sans-serif';
     color: #fff; 
@@ -12,7 +14,7 @@ body {
 }
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 100000;
     height: 100px;
     width: 100%;
     top: 0;
@@ -54,6 +56,15 @@ img {
     align-items: center;
 }
 
+.navMenu:hover li{
+    opacity: .2;
+    transition: all 0.5s ease;
+}
+.navMenu li:hover{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
 .navBar .flex {
     justify-content: space-between;
 }
@@ -74,7 +85,7 @@ img {
     text-align: left;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 300;
     line-height: 19px;
@@ -98,6 +109,10 @@ img {
 .navLinkHome:hover::after{
     width:60%;
 }
+.navLink[aria-current="page"] {
+    color: #4CD265;
+}
+
 .navLinkAbout {
     width: 100%;
     height: 100%;
@@ -108,7 +123,7 @@ img {
     text-align: left;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 300;
     line-height: 19px;
@@ -142,7 +157,7 @@ img {
     text-align: left;
     margin: 0 5px;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 300;
     line-height: 19px;
@@ -248,7 +263,7 @@ img {
 }
 .caseStudiesCopy {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -272,7 +287,7 @@ img {
 }
 .firstTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 44px;
 }
@@ -286,7 +301,7 @@ img {
 }
 .firstCopy {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -334,7 +349,7 @@ img {
 }
 .secondTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 44px;
 }
@@ -348,13 +363,13 @@ img {
 }
 .secondCopy {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 30px;
 }
 .soon{
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 13px;
 }
@@ -401,7 +416,7 @@ img {
 }
 .thirdTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     line-height: 44px;
 }
@@ -415,7 +430,7 @@ img {
 }
 .thirdCopy {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -519,7 +534,7 @@ img {
     border-radius: 7px;
     padding-left: 10px;
     font-family: 'roboto';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     color: darkgray;
@@ -534,7 +549,7 @@ img {
     border-radius: 7px;
     padding-left: 10px;
     font-family: 'roboto';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     color: darkgray;
@@ -555,7 +570,7 @@ img {
     border-radius: 7px;
     padding: 10px;
     font-family: 'roboto';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     color: darkgray;
@@ -573,7 +588,7 @@ img {
     color: #fff;
     border-radius: 5px;
     font-family: 'roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     border: 1px solid #4CD265;
     transition: all 0.3s ease;
@@ -632,7 +647,7 @@ img {
 
 .copyRight {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
 }
 
@@ -732,7 +747,7 @@ img {
 }
 .listBoxTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
 
 }
@@ -748,7 +763,7 @@ img {
     display: grid;
     grid-template-columns: 12% 17% 19% 21% 15%;
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 58px;
@@ -850,7 +865,7 @@ img {
     border-radius: 5px;
     border: 1px solid #fff;
     font-family: 'roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     transition: all 0.3s ease;
 }
@@ -893,7 +908,7 @@ img {
 }
 .skillTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 #plusMinus {
@@ -910,7 +925,7 @@ img {
 }
 .skillList {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 32px;
 }
@@ -964,7 +979,7 @@ img {
 }
 .appTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 #plusMinus {
@@ -981,7 +996,7 @@ img {
 }
 .appList {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 32px;
 }
@@ -1035,7 +1050,7 @@ img {
 }
 .intTitle {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 #plusMinus {
@@ -1052,7 +1067,7 @@ img {
 }
 .intList {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 32px;
 }
@@ -1120,7 +1135,7 @@ img {
         font-family: 'Roboto', 'sans-serif';
         font-size: 1.375rem;
         font-weight: 400;
-        line-height: 36px;
+        line-height: 1.625rem;
         text-align: center;
         margin: 0 20px;
     }
@@ -1143,34 +1158,86 @@ img {
         grid-template-areas:
         'one one two'
         'three three two';
-    }
-   /* .caseStudies .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 50px;
-        grid-template-areas:
-        'one'
-        'two'
-        'three';
         height: 100%;
+    }
+
+    /* First Grid Item */
+    .first {
+        width: 100%;
+        background-color: #00A5B9;
+        border-radius: 7px;
+        grid-area: one;
+    }
+    /*.first:hover {
+        transform: scale(.98);
     }*/
+    .firstColor {
+        background-color: #5BA6CD ;
+    }
     .firstText {
         max-width: 100%;
         margin-left: 20px;
         margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .firstTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+    }
+    .firstUnderline {
+        background-color: #4CD265;
+        width: 58%;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .firstCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.25rem;
+        font-weight: 400;
         margin-bottom: 40px;
+    }
+    .firstImage {
+        background-image: url(../Images/Cannoli_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        background-position-y: 150px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+
     }
     .firstWorksImage {
         background-image: url(../Images/LensBoard.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-position-x: 175px;
+        background-position-y: 0px;
         background-size: contain;
-        overflow: hidden;
-        margin: 10px 0;
-        margin-left: 90px;
+        overflow: visible;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 1;
     }
+    .firstGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;   
+    }
+
+
     .secondGrid {
         display: grid;
         grid-template-columns: 1fr;
@@ -1207,6 +1274,82 @@ img {
         margin-right: auto;
         text-align: center;
     }
+
+    /* Third Grid Item */
+    .third {
+        width: 100%;
+        background-color: #2563C8;
+        border-radius: 7px;
+        grid-area: three;
+    }
+    /*.third:hover {
+        transform: scale(.98);
+    }*/
+    .thirdColor {
+        background-color: #828384 ;
+    }
+    .thirdText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .thirdTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+    }
+    .thirdUnderline {
+        background-color: #4CD265;
+        width: 175px;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .thirdCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .thirdImage {
+        background-image: url(../Images/USDA_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        background-position-y: 150px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdWorksImage {
+        background-image: url(../Images/Knight_website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        background-position-y: 150px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;
+    }
+
     .caseStudiesCopy {
         font-family: 'Roboto', 'sans-serif';
         font-size: 1.375rem;
@@ -1252,7 +1395,7 @@ img {
     font-family: 'Roboto', 'sans-serif';
     font-size: 1.375rem;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 2.25rem;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -1381,7 +1524,7 @@ img {
 #plusMinus {
     display: block;
     opacity: 1;
-    transition: .03sec;      
+    transition: .03s;      
 }
 
 }
@@ -1417,6 +1560,8 @@ img {
         transition: 0.7s ease-in-out;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
         background-color: rgba(0, 0, 0, .9);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
     }
 
     .navMenu li {
@@ -1426,10 +1571,105 @@ img {
         left: 0px;        
     }
 
-    .grid,
-    .caseStudies .grid {
+    .hero .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .hero {
+        background-color: #000;
+        position: relative;
+        top: 100px;
+        padding-bottom: 125px;
+    }
+    .underLine {
+        background-color: #4CD265;
+        width: 85%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heroText {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .heroTitle {
+        font-weight: 900;
+        font-size: 1.5rem;
+       
+    }
+    .heroCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .heroImage {
+        max-width: 50%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .caseStudies .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 50px;
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        height: 100%;
+    }
+    .caseStudiesText {
+        margin-top: 50px;
+    }
+    .secondImage {
+        background-image: url(../Images/FitFriend-iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 225px;
+        background-position-y: 0px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondWorksImage {
+        background-image: url(../Images/VW_Social_iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 225px;
+        background-position-y: 0px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .secondGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        gap: 0;
     }
 
 /* About Page */
@@ -1471,7 +1711,7 @@ img {
         font-family: 'Roboto', 'sans-serif';
         font-size: 1.125rem;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.875rem;
         margin-bottom: 40px;
         text-align: center;
     }
@@ -1615,7 +1855,7 @@ img {
     #plusMinus {
         display: block;
         opacity: 1;
-        transition: .03sec;      
+        transition: .03s;      
     }
     
     /* Form */
@@ -1680,7 +1920,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -1693,7 +1933,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -1713,7 +1953,7 @@ img {
         border-radius: 7px;
         padding: 10px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -1731,7 +1971,7 @@ img {
         color: #fff;
         border-radius: 5px;
         font-family: 'roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         border: 1px solid #4CD265;
         transition: all 0.3s ease;
@@ -1773,7 +2013,7 @@ img {
     
     .copyRight {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
     }
 }
@@ -1807,7 +2047,7 @@ img {
         text-align: center;
         transition: 0.7s ease-in-out;
         box-shadow: 0px 10px 15px rgba(0, 0, 0, .7);
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0, 0, 0, .8);
     }
 
     .navMenu li {
@@ -1822,6 +2062,275 @@ img {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+
+    .hero .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .hero {
+        background-color: #000;
+        position: relative;
+        top: 100px;
+        padding-bottom: 125px;
+    }
+    .underLine {
+        background-color: #4CD265;
+        width: 85%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heroText {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .heroTitle {
+        font-weight: 900;
+        font-size: 1.5rem;
+       
+    }
+    .heroCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    .heroImage {
+        max-width: 65%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .firstText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .firstTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+    }
+    .firstUnderline {
+        background-color: #4CD265;
+        width: 58%;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .firstCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .firstImage {
+        background-image: url(../Images/Cannoli_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 70px;
+        background-position-y: 170px;
+        background-size: 230px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+
+    }
+    .firstWorksImage {
+        background-image: url(../Images/LensBoard.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 95px;
+        background-position-y: 110px;
+        background-size: contain;
+        background-size: 230px;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 1;
+    }
+    .firstGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;   
+    }
+
+    .caseStudies .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 50px;
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        height: 100%;
+    }
+    .caseStudiesText {
+        margin-top: 50px;
+    }
+
+.caseStudies {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 50px;
+}
+.caseStudiesText {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.caseStudiesTitle {
+    font-family: 'Roboto', "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.caseStudiesUnderline {
+    background-color: #4CD265;
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.caseStudiesCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+    .secondImage {
+        background-image: url(../Images/FitFriend-iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 150px;
+        background-position-y: 50px;
+        background-size: 270px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondWorksImage {
+        background-image: url(../Images/VW_Social_iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 150px;
+        background-position-y: 50px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .secondGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        gap: 0;
+    }
+
+    .thirdColor {
+        background-color: #828384 ;
+    }
+    .thirdText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1/span 2;
+        z-index: 1;
+    }
+    .thirdTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2.5rem;
+        font-weight: 900;
+        line-height: 2.75rem;
+    }
+    .thirdUnderline {
+        background-color: #4CD265;
+        width: 175px;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .thirdCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .thirdImage {
+        background-image: url(../Images/USDA_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        background-position-y: 150px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdWorksImage {
+        background-image: url(../Images/Knight_website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        background-position-y: 150px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;
+    }
+
 
 /* About Page */
     .intro {
@@ -1863,7 +2372,7 @@ img {
         font-family: 'Roboto', 'sans-serif';
         font-size: 1rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5rem;
         margin-bottom: 40px;
         text-align: center;
     }
@@ -2049,7 +2558,7 @@ img {
     #plusMinus {
         display: block;
         opacity: 1;
-        transition: .03sec;      
+        transition: .03s;      
     }
     
     /* Form */
@@ -2115,7 +2624,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2128,7 +2637,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2148,7 +2657,7 @@ img {
         border-radius: 7px;
         padding: 10px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2166,7 +2675,7 @@ img {
         color: #fff;
         border-radius: 5px;
         font-family: 'roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         border: 1px solid #4CD265;
         transition: all 0.3s ease;
@@ -2215,7 +2724,7 @@ img {
     
     .copyRight {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
         margin-top: 25px;
     }
@@ -2274,10 +2783,292 @@ img {
         left: 0px;        
     }
 
-    .grid,
-    .caseStudies .grid {
+    .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .caseStudies .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 40px;
+        grid-template-areas:
+        'one'
+        'two'
+        'three';
+        height: 100%;
+    }
+
+
+.caseStudies {
+    background-color: #000;
+    position: relative;
+    padding-bottom: 0px;
+}
+.caseStudiesText {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.caseStudiesTitle {
+    font-family: 'Roboto', "sans-serif";
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+.caseStudiesUnderline {
+    background-color: #4CD265;
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.caseStudiesCopy {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1rem;
+    font-weight: 400;
+}
+    .hero .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .hero {
+        background-color: #000;
+        position: relative;
+        top: 100px;
+        padding-bottom: 125px;
+    }
+    .underLine {
+        background-color: #4CD265;
+        width: 85%;
+        height: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heroText {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .heroTitle {
+        font-weight: 900;
+        font-size: 1.5rem;
+       
+    }
+    .heroCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .heroImage {
+        max-width: 65%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .firstText {
+        max-width: 100%;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom:15px;
+        grid-column: 1;
+        grid-row: 1/span 2;
+        z-index: 1;
+    }
+    .firstTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 2.25rem;
+    }
+    .firstUnderline {
+        background-color: #4CD265;
+        width: 58%;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .firstCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .firstImage {
+        background-image: url(../Images/Cannoli_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 130px;
+        background-position-y: 50px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+
+    }
+    .firstWorksImage {
+        background-image: url(../Images/LensBoard.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 110px;
+        background-position-y: 40px;
+        background-size: 150px;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .firstGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;
+        height: 100%;   
+    }
+    .secondImage {
+        background-image: url(../Images/FitFriend-iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 160px;
+        background-position-y: 30px;
+        background-size: 300px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondWorksImage {
+        background-image: url(../Images/VW_Social_iPhone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 150px;
+        background-position-y: 30px;
+        background-size: 270px;
+        
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .secondText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1/span 2;
+        z-index: 1;
+    }
+    .secondTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 2.5rem;
+    }
+    .secondUnderline {
+        background-color: #4CD265;
+        width: 175px;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .secondCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .secondGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        gap: 0;
+    }
+
+    .thirdColor {
+        background-color: #828384 ;
+    }
+    .thirdText {
+        max-width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        grid-column: 1;
+        grid-row: 1/span 2;
+        z-index: 1;
+    }
+    .thirdTitle {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 2.25rem;
+    }
+    .thirdUnderline {
+        background-color: #4CD265;
+        width: 40%;
+        height: 3px;
+        border-radius: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .thirdCopy {
+        font-family: 'Roboto', 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .thirdImage {
+        background-image: url(../Images/USDA_Website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 130px;
+        background-position-y: 50px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdWorksImage {
+        background-image: url(../Images/Knight_website.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 130px;
+        background-position-y: 50px;
+        background-size: contain;
+        overflow: hidden;
+        margin-top: 0px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        z-index: 0;
+    }
+    .thirdGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        width: 100%;
     }
 
 /* About Page */
@@ -2512,7 +3303,7 @@ img {
     #plusMinus {
         display: block;
         opacity: 1;
-        transition: .03sec;      
+        transition: .03s;      
     }
     
     /* Form */
@@ -2578,7 +3369,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2591,7 +3382,7 @@ img {
         border: 1px darkgray solid;
         border-radius: 7px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2611,7 +3402,7 @@ img {
         border-radius: 7px;
         padding: 10px;
         font-family: 'roboto';
-        font-size: 14px;
+        font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         color: darkgray;
@@ -2629,7 +3420,7 @@ img {
         color: #fff;
         border-radius: 5px;
         font-family: 'roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         border: 1px solid #4CD265;
         transition: all 0.3s ease;
@@ -2678,7 +3469,7 @@ img {
     
     .copyRight {
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 400;
         margin-top: 25px;
     }
