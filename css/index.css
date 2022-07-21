@@ -332,6 +332,8 @@ img {
 .second:hover .secondImage {
     transform: scale(1.05) translateY(-5px);
     transition: all 1s ease-in-out;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .third:hover .thirdImage {
     transform: scale(1.05) translateY(-5px);
@@ -440,6 +442,7 @@ img {
     background-size: cover;
     overflow: hidden;
     max-width: 100%;
+
 }
 .secondWorksImage {
     background-image: url(../Images/VW_Social_iPhone.png);
