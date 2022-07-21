@@ -281,7 +281,8 @@ img {
 .caseStudies {
     background-color: #000;
     position: relative;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    height: 100%;
 }
 .caseStudiesText {
     margin-top: 75px;
@@ -559,7 +560,7 @@ img {
 .contact {
     background-color: #000;
     position: relative;
-    top: 75px;
+    top: 0px;
     padding-bottom: 75px;
 }
 .contactText {
@@ -790,7 +791,7 @@ img {
     position: relative;
     max-width: 100%;
     top: 125px;
-    bottom: 75px;
+    margin-bottom: 80px;
 }
 .listBox {
     max-width: 100%;
