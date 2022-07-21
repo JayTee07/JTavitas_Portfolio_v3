@@ -17,6 +17,7 @@ document.querySelectorAll(".navMenu", "li").forEach(n => n.addEventListener("cli
     header.classList.remove("active");
 }));
 
+/* Skill Section on the About Page */
 $(".skillText").click(function(){
     $(this).find(".skillList_grid").toggleClass("skill-active");
     $(this).siblings(".skillTitle").find(".skillList_grid").removeClass("skill-active");
@@ -50,8 +51,61 @@ $(".intText").click(function(){
         }
 });
 
+/* Active Page */
 document.querySelectorAll('.navLink').forEach(link => {
     if(link.href === window.location.href) {
      link.setAttribute('aria-current', 'page')
     }
  })
+
+/* Scroll To Reveal Section Titles */
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    var slides = document.querySelectorAll('.slideLeft');
+    var slid = document.querySelectorAll('.slideRight');
+
+    for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 0;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('tada');
+        }
+        else{
+            reveals[i].classList.remove('tada');
+        }
+    }
+
+    for(var i = 0; i < slides.length; i++){
+
+        var windowheight = window.innerHeight;
+        var slidetop = slides[i].getBoundingClientRect().top;
+        var slidepoint = 0;
+
+        if(slidetop < windowheight - slidepoint){
+            slides[i].classList.add('sLeft');
+        }
+        else{
+            slides[i].classList.remove('sLeft');
+        }
+    }
+
+        for(var i = 0; i < slid.length; i++){
+
+        var windowheight = window.innerHeight;
+        var slidtop = slid[i].getBoundingClientRect().top;
+        var slidpoint = 0;
+
+        if(slidtop < windowheight - slidpoint){
+            slid[i].classList.add('sRight');
+        }
+        else{
+            slid[i].classList.remove('sRight');
+        }
+    }
+}
+

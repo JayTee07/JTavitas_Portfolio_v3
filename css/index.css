@@ -218,6 +218,7 @@ img {
 }
 .heroText {
     margin-top: 100px;
+    animation: 1s ease-in-out 0s 1 heroSlideInFromLeft;
 }
 .heroTitle {
     font-weight: 900;
@@ -234,6 +235,27 @@ img {
     max-width: 100%;
     margin-top: 36px;
     margin-bottom: 40px;
+    animation: 1s ease-in-out 0s 1 heroSlideInFromRight;
+}
+@keyframes heroSlideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes heroSlideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* Case Studies Section*/
@@ -245,6 +267,33 @@ img {
 .caseStudiesText {
     margin-top: 75px;
     margin-bottom: 50px;
+}
+.reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.tada {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.slideLeft {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.sLeft {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.slideRight {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.sRight {
+    transform: translateX(0%);
+    opacity: 1;
 }
 .caseStudiesTitle {
     font-family: 'Roboto', "sans-serif";
@@ -679,6 +728,7 @@ img {
 }
 .introContent {
     margin-top: 75px;
+    animation: 1s ease-in-out 0s 1 heroSlideInFromLeft;
 }
 .introGreeting{
     font-size: 2.25rem;
@@ -699,6 +749,7 @@ img {
 }
 .about-heroImage {
     max-width: 100%;
+    animation: 1s ease-in-out 0s 1 heroSlideInFromRight;
 }
 
 /* Skills Section */
