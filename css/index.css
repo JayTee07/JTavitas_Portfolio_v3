@@ -56,6 +56,7 @@ img {
     align-items: center;
 }
 
+/* 
 .navMenu:hover li{
     opacity: .2;
     transition: all 0.5s ease;
@@ -63,7 +64,7 @@ img {
 .navMenu li:hover{
     opacity: 1;
     transition: all 0.3s ease;
-}
+}*/
 
 .navBar .flex {
     justify-content: space-between;
@@ -110,9 +111,27 @@ img {
     width:60%;
 }
 .navLink[aria-current="page"] {
-    border-bottom: 2px solid #4CD265;
+    border-bottom: 3px solid #4CD265;
     border-radius: 0px;
-    padding-bottom: 0px
+    padding-bottom: 0px;
+}
+.navLink[aria-current="page"] .navLinkHome{
+    opacity: .5;
+}
+.navLink[aria-current="page"] .navLinkHome:hover::after{
+    width: 0%;
+}
+.navLink[aria-current="page"] .navLinkAbout{
+    opacity: .5;
+}
+.navLink[aria-current="page"] .navLinkAbout:hover::after{
+    width: 0%;
+}
+.navLink[aria-current="page"] .navLinkResume{
+    opacity: .5;
+}
+.navLink[aria-current="page"] .navLinkResume:hover::after{
+    width: 0%;
 }
 
 .navLinkAbout {
@@ -285,6 +304,7 @@ img {
 .sLeft {
     transform: translateX(0%);
     opacity: 1;
+    transition: all 1s ease-in;
 }
 .slideRight {
     transform: translateX(100%);
