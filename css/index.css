@@ -325,9 +325,18 @@ img {
     border-radius: 7px;
     grid-area: one;
 }
-/*.first:hover {
-    transform: scale(.98);
-}*/
+.first:hover .firstImage {
+    transform: scale(1.05) translateY(-5px);
+    transition: all 1s ease-in-out;
+}
+.second:hover .secondImage {
+    transform: scale(1.05) translateY(-5px);
+    transition: all 1s ease-in-out;
+}
+.third:hover .thirdImage {
+    transform: scale(1.05) translateY(-5px);
+    transition: all 1s ease-in-out;
+}
 .firstColor {
     background-color: #5BA6CD ;
 }
